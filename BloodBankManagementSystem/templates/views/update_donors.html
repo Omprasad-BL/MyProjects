@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/find.css">
+
+    <link rel="stylesheet" href="/add_donor.css">
+    <link rel="stylesheet" href="/navbar.css">
+
+    <link rel="stylesheet" href="/update_donor.css">
+
+
+
+    <title>home</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="nav_items">
+
+            <!-- logo section -->
+
+            <div href="" class="logo"><img src="https://cdn-icons-png.flaticon.com/512/6374/6374296.png" alt=""> Dono
+                Red</div>
+
+            <!-- hospital section -->
+
+            <a href="#home" class="hospital_section navbtn"><i class="fa-solid fa-house-medical"></i> hospital</a>
+
+            <!-- donor_section -->
+
+            <div class="dropdown navbtn donor_section">
+                <a class="dropbtn"> <i class="fa-solid fa-people-group"></i> donor
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="/donor/add_donors" class="add_donor"><i class="fa-solid fa-person-circle-plus"></i> add
+                        donor</a>
+
+                    <a href="/donor/update_donors" class="update"><i class="fa-solid fa-user-pen"></i> updates</a>
+
+                    <a href="/donor/donor_details" class="update"><i class="fa-solid fa-users-rectangle"></i> donor details</a>
+                </div>
+            </div>
+
+            <!-- donor searching section -->
+
+            <div class="dropdown navbtn search_section">
+                <a class="dropbtn "><i class="fa-solid fa-magnifying-glass"></i> donor search
+                    <i class="fa fa-caret-down"></i>
+                </a>
+
+                <div class="dropdown-content ">
+                    <a href="#" class="by_location"><i class="fa-solid fa-magnifying-glass-location"></i> search by
+                        location</a>
+
+                    <a href="#" class="by-group"><i class="fa-solid fa-droplet"></i> search by blood group</a>
+                </div>
+            </div>
+
+            <!-- stock section -->
+
+            <a href="#news" class="stocks_section navbtn"><i class="fa-solid fa-hand-holding-droplet"></i> stocks</a>
+
+            <!-- delete section -->
+
+            <a href="#news" class="delete_section navbtn"><i class="fa-solid fa-user-slash"></i> blocked donor</a>
+
+            <!-- logout section -->
+
+            <a href="/login" class="lagout_section navbtn"><i class="fa-solid fa-right-from-bracket"></i> logout</a>
+
+        </div>
+    </div>
+
+    <!-- donor section -->
+    <div class="donor_section">
+        <div class="search_nav">
+            <label for="">Enter Donor ID</label>
+            
+            <input type="text" value="" class="rotary_name">
+            <button >search</button>
+        </div>
+        <div class="donor_container">
+            <h1 class="hedding">Update Donor</h1>
+            <form class="donor_registration">
+                <div class="fields">
+                    <label for="">rotory name</label>
+                    <input type="text" class="rotory_name" value="ABCD" readonly>
+                </div>
+                <div class="fields">
+                    <label for="">donor id</label>
+                    <input type="text" class="donor_id" value="" readonly>
+                </div>
+                <div class="fields">
+                    <label for="">donor name</label>
+                    <input type="text" class="donor_name" value="">
+                </div>
+                <div class="fields">
+                    <label for="">Date of birth</label>
+                    <input type="date" class="dob">
+                </div>
+                <div class="fields">
+                    <label for="">Email </label>
+                    <input type="text" class="email" value="">
+                </div>
+
+                <div class="fields">
+                    <label for="">phone no</label>
+                    <input type="text" class="phone number" value="">
+                </div>
+                <div class="fields">
+                    <label for="">country</label>
+                    <select name="" class="country">
+                        <option value="">select</option>
+                        <option value="">india</option>
+                    </select>
+                </div>
+                <div class="fields">
+                    <label for="">State</label>
+                    <select class="state">
+                        <option value="SelectState">-- select state --</option>
+                        <option value="Andra Pradesh">Andra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madya Pradesh">Madya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Orissa">Orissa</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttaranchal">Uttaranchal</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadeep">Lakshadeep</option>
+                        <option value="Pondicherry">Pondicherry</option>
+                    </select>
+                </div>
+                <div class="fields">
+                    <label for="">District</label>
+                    <select class="district">
+                        <option value="">-- select district -- </option>
+                    </select>
+                </div>
+
+                <div class="fields">
+                    <label for="">taluk</label>
+                    <select class="taluk">
+                        <option value="">-- select taluk -- </option>
+                    </select>
+                </div>
+
+                <div class="fields">
+                    <label for="">address</label>
+                    <input type="text" class="address" value=" ">
+                </div>
+
+                <div class="fields">
+                    <label for="">blood type</label>
+                    <select class="blood_type">
+                        <option value="">-- select blood type -- </option>
+                        <option value="">O+ </option>
+                        <option value="">O- </option>
+                        <option value="">A+ </option>
+                        <option value="">A- </option>
+                        <option value="">B+ </option>
+                        <option value="">B- </option>
+                        <option value="">AB+ </option>
+                        <option value="">AB- </option>
+
+                    </select>
+                </div>
+
+
+                <div class="fields ">
+                    <label for="">Did you ever donate blood before?</label>
+                    <div id="radio" class=" radio">
+                        <input type="radio" class="yes" name="radio" value="yes">yes
+                        <input type="radio" class="no" name="radio" value="no">no
+                    </div>
+                </div>
+                <!-- if yes then show date of donetion -->
+
+                <div class="fields old_donate_date ">
+                    <label for="">When was the last time you have donated blood?</label>
+                    <input type="date" class="date_of_old_donation">
+                </div>
+
+
+                <div class="fields btns">
+                    <input type="submit" value="update" class="update_donor_info">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+<script src="/add_donor.js"></script>
+</html>

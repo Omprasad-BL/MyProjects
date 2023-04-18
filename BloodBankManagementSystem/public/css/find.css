@@ -1,0 +1,73 @@
+
+    .donor_section .search_nav {
+        display: flex;
+        justify-content:center;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        top:7rem;
+        margin: 0rem;
+        padding: 1rem;
+        background-color: rgb(255, 255, 255);
+        width: 70%;
+        font-size: 1.3rem;
+
+    }
+    .donor_section .search_nav label {
+        position: absolute;
+        top: 0;
+        font-size: .99rem;
+    }
+
+    .donor_section .search_nav input {
+        width: 25%;
+        margin:1rem 1REM 0REM 0 ;
+        padding: .5rem;
+
+
+    }
+    .donor_section .search_nav button{
+        padding: .1rem;
+    }
+    label {
+        /* margin: 0 1rem; */
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /* display: flex; */
+        float: left;
+        color: blue;
+        word-wrap: break-word;
+        
+    }
+    input[type=text],
+    input[type=date],
+    select {
+        float:inline-end;
+
+        /* margin: 1rem; */
+        padding: .7rem 1rem;
+        font-size: 1.1rem;
+        width: 40%;
+        transition: .3s ease;
+        outline: none;
+        border: none;
+        /* border: .001rem solid black; */
+        border-radius: .4rem;
+
+        background-color: rgba(148, 148, 148, 0.635);
+
+    }
+
+    button {
+
+        width: 7rem;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        height: 2rem;
+        color: white;
+        border: none;
+        background-color: #0c65ea;
+        border-radius: .5rem;
+
+    }
+
+ 

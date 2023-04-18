@@ -1,0 +1,153 @@
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .donor_section {
+        width: 100%;
+        height: 100vh;
+        /* background-color: rgba(104, 104, 104, 0.272); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+
+    .donor_section .donor_container {
+        overflow: hidden;
+        width: 70%;
+        height: 25rem;
+        margin-top: 6.5rem;
+        box-shadow: 0px 0px .5rem .1rem rgba(0, 0, 0, 0.591);
+
+        /* margin: 10rem; */
+        background-color: rgba(128, 128, 128, 0.591);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        justify-content: space-evenly;
+    }
+
+    .donor_section .donor_container h1 {
+        padding: 1rem;
+        border-bottom: .1rem solid black;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .donor_section .donor_container .donor_registration {
+        overflow: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+      
+flex-direction: row;
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+
+        padding: 2rem;
+    }
+
+    .donor_registration .fields {
+        display: block;
+        margin: .1rem;
+        padding: .5rem;
+        background-color: aliceblue;
+        width: 100%;
+        font-size: 1.3rem;
+
+    }
+
+    .donor_registration .fields label {
+        margin: 0 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        color: blue;
+    }
+
+    .donor_registration .fields input[type=text],
+    input[type=date],
+    select {
+        margin: 1rem;
+        padding: .7rem 1rem;
+        font-size: 1.1rem;
+        width: 60%;
+        transition: .3s ease;
+        outline: none;
+        border: none;
+        /* border: .001rem solid black; */
+        border-radius: .4rem;
+
+        background-color: rgba(148, 148, 148, 0.635);
+
+    }
+
+    .fields input::placeholder {
+        color: black
+    }
+
+    .donor_registration .fields input:hover,
+    select:hover {
+        background-color: rgba(0, 0, 0, 0.301);
+    }
+
+    .donor_registration .fields input[type=text]:focus,
+    input[type=date]:focus,
+    select:focus {
+        box-shadow: 0 0 1rem .1rem rgb(0, 0, 0);
+    }
+    .old_donate_date{
+        display:none;
+    }
+    #radio {
+        display: flex;
+        flex-direction: row;
+        padding: .5rem;
+        margin: 1rem;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+
+    #radio label {
+        color: black;
+
+    }
+
+    #radio input {
+        width: 1.3rem;
+        margin: 0 1rem;
+
+    }
+
+    .donor_registration .btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .donor_registration .btns input[type=submit],
+    input[type=reset] {
+
+        width: 9rem;
+        font-size: 1.3rem;
+        height: 2.5rem;
+        color: white;
+        border: none;
+        background-color: #0c65ea;
+        border-radius: .5rem;
+
+    }
+
+    .donor_registration .btns input[type=submit]:hover,
+    .donor_registration .btns input[type=reset]:hover {
+        background-color: #0080ff;
+
+    }

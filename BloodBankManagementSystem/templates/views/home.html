@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+
+<body>
+    <div class="navbar">     <div class="nav_items">
+
+        <!-- logo section -->
+
+        <div href="/home" class="logo"><img src="https://cdn-icons-png.flaticon.com/512/6374/6374296.png" alt=""> Dono
+            Red</div>
+
+        <!-- hospital section -->
+
+        <a href="#home" class="hospital_section navbtn"><i class="fa-solid fa-house-medical"></i> hospital</a>
+
+        <!-- donor_section -->
+
+        <div class="dropdown navbtn donor_section">
+            <a class="dropbtn"> <i class="fa-solid fa-people-group"></i> donor
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="/donor/add_donors" class="add_donor"><i class="fa-solid fa-person-circle-plus"></i> add donor</a>
+
+                <a href="/donor/update_donors" class="update"><i class="fa-solid fa-user-pen"></i> updates</a>
+
+                <a href="/donor/donor_details" class="donor_details"><i class="fa-solid fa-users-rectangle"></i> donor details</a>
+            </div>
+        </div>
+
+        <!-- donor searching section -->
+
+        <div class="dropdown navbtn search_section">
+            <a class="dropbtn "><i class="fa-solid fa-magnifying-glass"></i> donor search
+                <i class="fa fa-caret-down"></i>
+            </a>
+
+            <div class="dropdown-content ">
+                <a href="#" class="by_location"><i class="fa-solid fa-magnifying-glass-location"></i> search by
+                    location</a>
+
+                <a href="#" class="by-group"><i class="fa-solid fa-droplet"></i> search by blood group</a>
+            </div>
+        </div>
+
+        <!-- stock section -->
+
+        <a href="#news" class="stocks_section navbtn"><i class="fa-solid fa-hand-holding-droplet"></i> stocks</a>
+
+        <!-- delete section -->
+
+        <a href="#news" class="delete_section navbtn"><i class="fa-solid fa-user-slash"></i> blocked donor</a>
+
+        <!-- logout section -->
+
+        <a href="/login" class="lagout_section navbtn"><i class="fa-solid fa-right-from-bracket"></i> logout</a>
+
+    </div></div>
+</body>
+<!-- <script src="navbar.js"></script> -->
+
+
+
+</script>
+</html>
