@@ -1,0 +1,20 @@
+body {
+    /* color: white; */
+    background: black;
+  }
+
+  .clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #edfcff;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 7px;
+    padding: 10px;
+    border: 2px solid lightgray;
+    font-weight: bolder;
+    box-shadow: 0px 0px 5px 3px white inset;
+    text-shadow: 0px 0px 7px red;  
+      }
