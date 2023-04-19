@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    font-family: system-ui;
+  }
+  h1 {
+    background-color: rgba(185, 223, 255,0.3);
+    backdrop-filter: blur(0.7);
+    -webkit-backdrop-filter: blur(0.7);
+    /* background: white; */
+    border-radius: 4px 40px 4px 40px;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 2px 0px 4px 1px black;
+  }
+  span {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: monospace;
+  }
+  #genNew{
+    outline: none;
+    border: 2px outset red;
+    background-color: seashell;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
