@@ -10,3 +10,5 @@ const setBg = () => {
   
   genNew.addEventListener("click", setBg);
   setBg(); // callback of function
+
+
