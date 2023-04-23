@@ -171,3 +171,55 @@
         color: white;
         background-color: lightskyblue;
      }
+     @media screen and (max-width:675px) {
+        /* nav bar */
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #icon{
+            position:relative;
+            left: auto;
+                }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            width: 100svw;
+        }
+        .container, .job , .wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+        .container{
+            flex-direction: column-reverse;
+        }
+        .container, .skillSet{
+            /* width: 100svw; */
+            overflow-x: hidden;
+            align-items: center;
+            justify-content: center;
+        }
+        /* skill sets */
+        .skillSet{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .skillSet>.data_box{
+            /* width: max-content; */
+            /* padding: 10px 20px; */
+            width: 100%; 
+            /* flex-basis: 180px; */
+            flex-grow: 1;
+        }
+     }
