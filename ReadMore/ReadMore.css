@@ -1,0 +1,14 @@
+#more {
+    display: none;
+  }
+  p {
+    background-color: rgb(70, 116, 81);
+    padding: 10px;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* word-spacing: 2px; */
+  }
+  .more-content {
+    display: none;
+    transition: all 0.3s;
+  }
