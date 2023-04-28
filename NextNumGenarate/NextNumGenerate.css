@@ -15,11 +15,15 @@ body{
     align-items: center;
     padding: 10px 20px;
     background: linear-gradient(70deg , rgb(90, 111, 243), rgb(54, 158, 183)) ;
-    border: 2px dashed black;
+    border: 2px dashed rgb(45, 119, 53);
     border-radius: 5px;
+    -webkit-backdrop-filter: blur(0.2);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     transition: all 0.7s;
+    animation: flow 5s infinite;
 }
+
+ /* Done By Omprasad B L */
 .wrapper:hover{
     background-position-x: -273px;
 }
@@ -44,4 +48,23 @@ input::placeholder{
     color: rgb(245, 245, 245);
     opacity: 0.5;
 }
+
+
+#next{
+     border-bottom: 2px solid white;
+     width: 100%;
+}
  /* Done By Omprasad B L */
+ @keyframes flow {
+    0%{
+     transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(5%);
+
+    }
+    100%{
+        transform: translateY(0%);
+
+    }
+ }
