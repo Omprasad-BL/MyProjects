@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  .circle::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    background: #FFFFFFC0;
+    transform: translate(-50%, -50%);
+    animation: pulse 300ms ease-in-out alternate infinite
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: translate(-50%, -50%) scale(.8) ;
+    }
+    to {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+  p{
+    width: 100svw;
+    background-color: rgb(67, 92, 92);
+    height: 100svh;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <p>
+
+    </p>
+ <script src="Assessment.js"></script>
+  </body>
+  </html>
