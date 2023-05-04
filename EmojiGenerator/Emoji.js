@@ -8,7 +8,7 @@ function random() {
     emj = Math.floor(Math.random() * 129510);
   }
   emjArea.innerHTML = `&#${emj}`;
-  document.getElementById("code").innerHTML=emjArea.textContent;
+  document.getElementById("code").innerText=`&#${emj}`;
 
 }
 
