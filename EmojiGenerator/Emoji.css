@@ -1,0 +1,37 @@
+body{
+    height: 100svh;
+        width: 100svw   ;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      
+
+    }
+    .container{
+        display: grid;
+        justify-content: center;
+    }
+
+    #val{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        height: 200px;
+        width: 200px;
+        font-size: 10pc;
+        background-color: lightskyblue;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+   button{
+    width: 100%;
+    all: unset;
+    background-color: lightseagreen;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+   }
