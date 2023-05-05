@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    height: 100svh;
+    width: 100svw;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.container{
+    min-height:100px ;
+    min-width:200px;
+    padding: 20px;
+    background-color: rgb(36, 79, 122);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#quote{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height: max-content;
+    background-color: lightblue;
+    border-radius: 6px;
+}
+input{
+    width: max-content;
+    justify-self: center;
+}
