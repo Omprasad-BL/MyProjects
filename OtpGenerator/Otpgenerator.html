@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #otp{
+            width:150px;
+            height: 50px;
+            background-color: black;
+            letter-spacing: 3px;
+            color: white;
+            justify-self: center;
+            text-align: center  ;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            background-color: lightsalmon;
+            justify-self: center;
+        }
+        body{
+            width: 100svw;
+            height: 100svh;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            display: grid;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>Captche Creator</h1>
+    <h1 id="otp"></h1>
+    <button onclick="check();">Generate</button>
+   </div>
+    <script src="Otpgenerator.js"></script>
+</body>
+</html>
