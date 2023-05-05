@@ -4,7 +4,7 @@ function random() {
   console.log("Hello work ");
   // let emj=Math.floor((8986) + Math.floor(Math.random() * 129510));
   var emj =0;
-  while (emj < 8986) {
+  while (emj < 127748) {
     emj = Math.floor(Math.random() * 129510);
   }
   emjArea.innerHTML = `&#${emj}`;

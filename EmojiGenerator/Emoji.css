@@ -4,14 +4,22 @@ body{
         display: grid;
         align-items: center;
         justify-content: center;
+        overflow-x: hidden;
       
 
     }
     .container{
         display: grid;
         justify-content: center;
+        align-items: center;
+        height:auto;
+        margin:unset
+        /* background-color: black; */
     }
-
+    h4{
+        text-align: center;
+        width: 100%;
+    }
     #val{
         display: flex;
         align-items: center;
