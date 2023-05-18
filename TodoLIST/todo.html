@@ -5,17 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
 </head>
 <body>
 
-    <d class="container">
-         enter title <input type="text" id="input">
-         <br>
-         description <input  type="text">
-         <br>
-         <button onclick="submit();">Add</button>
-         
+    <div class="container">
 
+        <h1><b>ToDo App</b></h1>
+        <div class="head1">
+            <label for="intext">Head</label> <input type="text" id="intext" class="intext">
+            <br>
+             <label for="description">Description</label> <textarea  type="text" id="description" class="description"></textarea>
+            <br>
+            <button onclick="submit();">Add</button>
+        </div>
+         
+         <div class="body">
+            <h1>ToDo</h1>
+            <div class="list-do" id="list-do">
+            
+             </div>
+
+            <!-- <h1>Completed</h1>
+            <ul class="completed">
+
+            </ul> -->
+         </div>
          
     </div>
     <script src="todo.js"></script>

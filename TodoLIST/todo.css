@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.head1{
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    background-color: lightskyblue;
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    width: 300px;
+    height: max-content;
+    background-color: lightslategrey;
+    overflow: auto;
+    align-items: start;
+}
+.list_do{
+    overflow: auto;
+}
