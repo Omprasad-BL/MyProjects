@@ -2,6 +2,10 @@ body{
     display: flex;
     justify-content: center;
 }
+.body{
+    width: 100%;
+    overflow: auto;
+}
 .head1{
     width: max-content;
     height: max-content;
