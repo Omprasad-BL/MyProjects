@@ -1,0 +1,20 @@
+
+.slider {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+.slider img {
+display: none;
+width: 100%;
+}
+
+.slider img.active {
+display: block;
+}
+
+button {
+margin-top: 10px;
+}
+
