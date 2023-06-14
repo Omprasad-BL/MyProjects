@@ -111,6 +111,7 @@ header>nav{
     margin-top: 40px;
     width: 100%;
     display: flex;
+    margin: 10px;
     align-items: center;
     justify-content: space-evenly  ;
 }
@@ -156,7 +157,7 @@ header>nav{
     border-radius: 8px;
     padding: 15px;
     margin: 10px;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 .skill >i{
     font-size: 40px;
@@ -235,18 +236,24 @@ input[type=submit]{
     margin: auto;
 }
 .socialNetowrk *{
-    color: #E4DCCF;
+    color: #ffffff;
+    transition: all 0.5s;
 
 }
-.socialNetowrk .fa-brands:hover{
+.socialNetowrk .fa-brands:hover ,.fa-solid:hover{
     text-shadow: 0px 0px 3px white;
-
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
 }
 .socialNetowrk a .fa-square-facebook:hover{
     color: rgb(23, 55, 126);
 }
 .socialNetowrk a .fa-square-whatsapp:hover{
     color: rgb(40, 141, 44);
+
 }
 .socialNetowrk a .fa-github:hover{
     color: rgb(39, 48, 69);
@@ -255,7 +262,7 @@ input[type=submit]{
     color: rgb(23, 55, 126);
 }
 .socialNetowrk a .fa-envelope:hover{
-    color: rgb(202, 212, 107);
+    color: rgb(199, 11, 11);
 }
 .socialNetowrk a .fa-hashnode:hover{
     color: rgb(56, 79, 128);
@@ -318,10 +325,11 @@ a{
 
         nav{
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
         }
         .right-nav{
-            position: relative;
+            /* position: relative; */
             left: 10px;
             top: 50px;
             font-size: 20px;
@@ -331,15 +339,17 @@ a{
         }
 
         .right-nav{
-            float: right;
             z-index: 99;
-            display: grid;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             /* grid-template-columns: repeat(2, minmax(60px,1fr)); */
             gap: 10px;
-            align-items: end;
-            background-color: aqua;
+            background-color: rgb(53, 77, 151);
           }
           .right-nav >a{
+            width: max-content;
             margin: auto;
             padding: 10px;
           }
@@ -381,7 +391,7 @@ a{
     /* overflow-wrap: break-word; */
     border: 2px solid black;
     /* margin: 20px; */
-    background-color: lightcoral;
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
    }
    .skill > i{
@@ -445,15 +455,28 @@ a{
     display: grid;
     justify-content: center;
     margin-bottom: 10px;
+    box-sizing: border-box;
   }
   #to-top>i{
-    font-size: 50px;
+    font-size: 1em;
+    
   }
   /* SOCIAL NETWORK CSS */
-   .socialNetowrk{
-    font-size: 30px;
-    display:flex;
-    justify-content: space-evenly;
+  .socialNetowrk{
+    display: flex;
+    gap: 10px;
+  }
+   .socialNetowrk *{
+    color: #ffffff;
+    transition: all 0.5s;
 
-   }
+}
+.socialNetowrk .fa-brands:hover ,.fa-solid:hover{
+    text-shadow: 0px 0px 3px white;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+}
 }
