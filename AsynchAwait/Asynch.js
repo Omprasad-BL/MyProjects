@@ -48,8 +48,9 @@ function fetchText() {
     fetch('https://dummyjson.com/users')
         .then(response => response.json())
         // .then(data => data.users.map((element) => {
-        // console.log(element.firstName);
         .then((element) => {
+
+            //  HERE IAM CONVERTING FROM JSON OBJECT THEN ACCESSING THOSE VALUES USING FOREACH LOOP
             console.log(element);
             let table = "<tr><th>fname</th><th>lname</th><th> address</th> <th> phone</th> <th> email</th></tr>";
             element.users.forEach(element => {
