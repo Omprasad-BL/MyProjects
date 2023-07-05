@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        margin-top: -10px;
+        justify-content: center;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      .sidenav {
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        width: 0;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      .sidenav a:hover {
+        background-color: #818181;
+        color: white;
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      nav {
+        position: relative;
+        top: -10;
+        width: 100svw;
+        display: flex;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        align-items: center;
+        background-color: rgb(14, 60, 107);
+      }
+      .hero-section {
+        position: static;
+        /* z-index: 11; */
+        height: 100svh;
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        color: white;
+        padding: 10px;
+        background-color: rgb(30, 101, 59);
+        background: url(16339824_v915-techi-020.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(0.5);
+      }
+      #header {
+        color: rgb(28, 28, 84);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+      }
+      footer {
+        position: relative;
+        bottom: -8px;
+        padding-top: 20px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: space-around;
+        background: rgb(13, 13, 53);
+      }
+      ul > li {
+        list-style: none;
+      }
+      .hero-section{
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mysideNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times</a
+      >
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Clents</a>
+      <a href="#">Concat</a>
+    </div>
+
+    <nav>
+      <h1 class="logo">Brothers</h1>
+      <span onclick="openNav()">&#9776; </span>
+    </nav>
+    <h1 id="header">Hello It's Omprasad B L Iam Coding Enthusiast</h1>
+
+    <div class="hero-section">
+      <!--?xml version="1.0" standalone="no"?-->
+      <svg
+        id="sw-js-blob-svg"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+            <stop
+              id="stop1"
+              stop-color="rgba(248, 117, 55, 1)"
+              offset="0%"
+            ></stop>
+            <stop
+              id="stop2"
+              stop-color="rgba(251, 168, 31, 1)"
+              offset="100%"
+            ></stop>
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#sw-gradient)"
+          d="M28,-26.9C35.5,-20.4,40.3,-10.2,37.9,-2.4C35.5,5.3,25.7,10.7,18.2,16C10.7,21.3,5.3,26.5,0.4,26.1C-4.5,25.7,-9,19.6,-11.9,14.3C-14.9,9,-16.4,4.5,-18.3,-1.9C-20.2,-8.2,-22.4,-16.5,-19.4,-22.9C-16.5,-29.3,-8.2,-33.9,1,-34.9C10.2,-35.9,20.4,-33.3,28,-26.9Z"
+          width="100%"
+          height="100%"
+          transform="translate(50 50)"
+          stroke-width="0"
+          style="transition: all 0.3s ease 0s"
+        ></path>
+      </svg>
+
+      <!--?xml version="1.0" standalone="no"?-->
+      <svg
+        id="sw-js-blob-svg"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+            <stop
+              id="stop1"
+              stop-color="rgba(248, 117, 55, 1)"
+              offset="0%"
+            ></stop>
+            <stop
+              id="stop2"
+              stop-color="rgba(251, 168, 31, 1)"
+              offset="100%"
+            ></stop>
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#sw-gradient)"
+          d="M22.4,-20.1C29.4,-15.5,35.5,-7.8,33.9,-1.6C32.3,4.6,23.1,9.2,16.1,14.2C9.2,19.2,4.6,24.6,0,24.5C-4.6,24.5,-9.1,19.1,-17,14.1C-24.9,9.1,-36.2,4.6,-37,-0.8C-37.8,-6.2,-28.2,-12.4,-20.3,-16.9C-12.4,-21.5,-6.2,-24.4,0.8,-25.2C7.8,-26,15.5,-24.6,22.4,-20.1Z"
+          width="100%"
+          height="100%"
+          transform="translate(50 50)"
+          stroke-width="0"
+          style="transition: all 0.3s ease 0s"
+        ></path>
+      </svg>
+
+      <!--?xml version="1.0" standalone="no"?-->
+      <svg
+        id="sw-js-blob-svg"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+            <stop
+              id="stop1"
+              stop-color="rgba(248, 117, 55, 1)"
+              offset="0%"
+            ></stop>
+            <stop
+              id="stop2"
+              stop-color="rgba(251, 168, 31, 1)"
+              offset="100%"
+            ></stop>
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#sw-gradient)"
+          d="M17.9,-17.6C23.4,-12.3,28.3,-6.2,28.1,-0.2C27.9,5.7,22.6,11.5,17,16.6C11.5,21.6,5.7,26.1,-2,28C-9.7,30,-19.4,29.5,-27.5,24.5C-35.6,19.4,-42.1,9.7,-42,0.1C-41.9,-9.5,-35.1,-18.9,-27,-24.2C-18.9,-29.4,-9.5,-30.5,-1.6,-28.9C6.2,-27.2,12.3,-22.9,17.9,-17.6Z"
+          width="100%"
+          height="100%"
+          transform="translate(50 50)"
+          stroke-width="0"
+          style="transition: all 0.3s ease 0s"
+        ></path>
+      </svg>
+    </div>
+
+    <footer>
+      <ul>
+        <li>More</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Connect Us</li>
+        <li>FAQ</li>
+      </ul>
+
+      <ul>
+        <li>More</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Connect Us</li>
+        <li>FAQ</li>
+      </ul>
+    </footer>
+
+    <script src="MenuBard.js"></script>
+  </body>
+</html>
