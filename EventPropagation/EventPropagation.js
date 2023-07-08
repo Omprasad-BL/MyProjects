@@ -3,6 +3,8 @@
 function(event){
     console.log("original data");
     console.log("target" , event.target.tagName);
+    event.stopPropagation(); 
+    // Stop propagation will help to control bubbling
     console.log("current target", event.currentTarget.id);
     alert("child")
 
