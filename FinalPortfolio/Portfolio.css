@@ -480,3 +480,7 @@ a{
     border-radius: 50%;
 }
 }
+
+ul  li{
+    list-style: none;
+}
