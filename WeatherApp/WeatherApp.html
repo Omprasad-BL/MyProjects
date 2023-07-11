@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="WeatherApp.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  </head>
+  <body>
+    
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          name=""
+          placeholder="Enter CityName"
+          spellcheck="false"
+        />
+       <button><img src="./images/search.png" alt="search"></button>
+      </div>
+      <div class="error">
+        <h3>Invalid Input</h3>
+      </div>
+    
+    <div class="weather">
+        <img src="./images/rain.png"  class="weather-icon" alt="text">
+        <h1 class="temp"></h1>
+        <h2 class="city"></h2>
+        <div class="details">
+            <div class="col">
+                <img src="./images/humidity.png" alt="">
+                <div>
+                    <p class="humidity">Humidity</p>
+                    
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="./images/wind.png" alt="">
+                <div>
+                    <p class="wind">WindSpeed</p>
+
+                </div>
+            </div>   
+        </div>
+    </div>
+
+  </div> 
+  <!-- end of cards -->
+
+    <script src="WeatherApp.js"></script>
+  </body>
+</html>
