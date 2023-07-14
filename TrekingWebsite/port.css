@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: cadetblue;
+    color: whitesmoke;
+}
+
+.container {
+    display: grid;
+    width: 100svw;
+    /* background-color: darkolivegreen; */
+}
+
+.Mainslide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.slideOne {
+    width: 100%;
+    height: 100svh;
+    background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(10, 6, 9, 0.73)),
+        url('tobias-tullius-RhjVGxILcqE-unsplash.jpg');
+    /* background: url(tobias-tullius-RhjVGxILcqE-unsplash.jpg); */
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(39, 57, 51, 0.201);
+    -webkit-backdrop-filter: blur(6px);
+    height: 70px;
+    text-shadow: 1px 1px 1px black;
+}
+
+header nav {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+nav a:hover{
+    background-color: #E55807;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    height: 80svh;
+    width: 100svw;
+}
+
+.hero-left {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.hero>h1 {
+    font-size: 80px;
+}
+
+.hero-right {
+    display: grid;
+    align-content: space-evenly;
+}
+
+.hero-right .camp-item {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    width: 110px;
+    height: 110px;
+    background: rgba(255, 255, 255, 0.324);
+}
+
+.hero button,
+.camp-info button,
+.slideFour button {
+    all: unset;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: #E55807;
+    padding: 14px;
+    color: white;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+
+
+.social {
+    display: grid;
+    height: 120px;
+    width: max-content;
+    font-size: 20px;
+    justify-items: center;
+    /* background-color: blueviolet; */
+    position: absolute;
+    left: 20px;
+    color: white;
+    top: 500px;
+}
+
+
+
+
+
+.slideFour,
+.slideTwo {
+    width: 100%;
+    height: 100svh;
+    background-image:
+        linear-gradient(to right, rgba(30, 51, 35, 0.37), rgba(0, 0, 0, 0.73) 50%),
+        url('jonatan-lewczuk-hN7jhC_YWk0-unsplash.jpg');
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.slideFour .camp-info,
+.slideTwo .camp-info {
+    max-width: 300px;
+    margin-right: 200px;
+}
+
+
+.slideThree {
+    width: 100%;
+    height: 100svh;
+    background-image:
+        linear-gradient(to left, rgba(38, 63, 53, 0.217) 10%, rgba(0, 0, 0, 0.73) 60%),
+        url('jonatan-lewczuk-hN7jhC_YWk0-unsplash.jpg');
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.slideThree .camp-info {
+    max-width: 300px;
+    margin-left: 200px;
+}
+
+.slideFive {
+    width: 100%;
+    height: 100svh;
+    background-image:
+        linear-gradient(to left, rgba(38, 63, 53, 0.217) 10%, rgba(0, 0, 0, 0.73) 60%),
+        url('jonatan-lewczuk-hN7jhC_YWk0-unsplash.jpg');
+}
+
+.slideFive .camp-info {
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-opt {
+    /* max-width: 50%; */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.left-opt .left-opt-data {
+    max-width: 100px;
+}
+
+.left-opt-data h1 {
+    font-size: 60px;
+}
+
+.right-opt {
+    width: 50%;
+    display: grid;
+    justify-content: space-evenly;
+    /* gap: 10px; */
+    grid-template-columns: repeat(2, minmax(200px, 250px));
+}
+
+.right-opt .point {
+    display: grid;
+    justify-content: center;
+
+}
+
+.right-opt .point i,
+.right-opt .point span {
+    font-size: 40px;
+}
+
+.slideSix {
+    width: 100svw;
+    height: 100svh;
+    background-image:
+        linear-gradient(to left, rgba(38, 63, 53, 0.217) 10%, rgba(0, 0, 0, 0.73) 60%),
+        url('jonatan-lewczuk-hN7jhC_YWk0-unsplash.jpg');
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.upcomming-left {
+
+    width: 50%;
+    height: 100svh;
+    /* background-color: #E55807; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.upcomming-left .img-cover {
+    /* margin: 20px; */
+    width: 500px;
+
+    object-fit: cover;
+    height: auto;
+}
+
+.upcomming-left .img-cover img {
+    border-radius: 10px;
+}
+
+.upcomming-right {
+    width: 50%;
+    height: 100svh;
+    /* background-color: #114c21; */
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.data-cover {
+    max-width: 400px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+#One,
+#Two {
+    all: unset;
+    border: 1px solid #E55807;
+    padding: 10px;
+    border-radius: 10px 5px;
+}
+
+#One {
+    color: #E55807;
+}
+
+#Two {
+    background: #E55807;
+    color: whitesmoke;
+}
+
+.slideSeven {
+    width: 100svw;
+    height: 100svh;
+    background-image:
+        linear-gradient(to left, rgba(38, 63, 53, 0.217) 10%, rgba(0, 0, 0, 0.73) 60%),
+        url('jonatan-lewczuk-hN7jhC_YWk0-unsplash.jpg');
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideSeven .images {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.slideSeven h1 {
+    text-align: center;
+}
+
+/* Code For slide Show */
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    height: max-content;
+    object-fit: cover;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+.slideEight {
+    height: 100svh;
+    width: 100svw;
+    background-image:
+        linear-gradient(to left, rgba(38, 63, 53, 0.217) 10%, rgba(0, 0, 0, 0.73) 60%),
+        url('jonatan-lewczuk-hN7jhC_YWk0-unsplash.jpg');
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.slideEight .bottom-top {
+    height: 200px;
+    width: 80%;
+    border-radius: 10px;
+    /* background-color: #46e5071b; */
+    background: url(dane-deaner-imztpH1lSpY-unsplash.jpg), 0.5;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bottom-top input {
+    all: unset;
+    /* border: 1px solid red; */
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 30%;
+    border-radius: 6px;
+}
+
+.bottom-top button {
+    all: unset;
+    padding: 10px 25px;
+    width: max-content;
+    text-align: center;
+
+    color: #ffffff;
+    border-radius: 6px;
+    background: #E55807;
+
+}
+
+.slideEight .bottom-down {
+    height: max-content;
+    width: 80%;
+    background-color: #1b482228;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: grid;
+    justify-items: center;
+    /* -webkit-filter: blur(0.5); */
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.bottom-down .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+.socialMenu {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+.socialMenu i {
+    font-size: 30px;
+}
+
+.bottom-down a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+button:hover{
+    color: #E55807;
+    background: none;
+    border: 1px solid #E55807;
+}
