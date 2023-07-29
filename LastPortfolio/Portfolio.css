@@ -343,6 +343,10 @@ span {
 .contact form .input-box input {
     width: 49%;
 }
+.contact form .input-box input[type="number"]::-webkit-inner-spin-button,
+.contact form .input-box input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
 
 .contact form textarea {
     resize: none;
