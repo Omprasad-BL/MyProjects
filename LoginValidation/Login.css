@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-width: 200px;
+    width: 20rem;
+    padding: 2rem;
+    background: rgb(174, 205, 238);
+    background: linear-gradient(109deg, rgba(174, 205, 238, 1) 0%, rgba(177, 148, 233, 1) 100%);
+    border-radius: 3px;
+}
+
+form {
+    display: grid;
+}
+
+#message {
+    position: relative;
+    z-index: 11;
+    display: none;
+    padding: 2rem;
+}
+
+.valid {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}

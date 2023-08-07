@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login form</title>
+    <link rel="stylesheet" href="Login.css" />
+  </head>
+  <body>
+    <h1>Password validation</h1>
+    <div class="container">
+      <form>
+        <label for="username">Useraname</label>
+        <input type="text" name="username" id="username" />
+        <label for="password">Password</label>
+        <input
+        title="match all criteria"
+          type="text"
+          required
+          name="password"
+          id="pswd"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A_Z]).{8,}"
+        />
+        <label for="passcheck"
+          >toggle password
+          <input type="checkbox" name=""  id="passcheck" />
+        </label>
+
+        <input type="submit" name="" value="submit" id="" />
+      </form>
+
+      <div id="message">
+        <h3>password must contain the following</h3>
+        <p id="letter" class="invalid"><b>lower case letter</b></p>
+        <p id="capital" class="invalid"><b>upper case letter</b></p>
+        <p id="number" class="invalid"><b>number</b></p>
+        <p id="length" class="invalid"><b>length > 8</b></p>
+      </div>
+    </div>
+    <script src="Login.js"></script>
+  </body>
+</html>
