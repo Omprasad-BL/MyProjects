@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Are you sure to store data</h1>
+    <main>
+        <div id="data">
+
+        </div>
+        <div>
+            <button id="btn">Confirm</button>
+        </div>
+    </main>
+    <script>
+        const json=localStorage.getItem('form');
+        const obj=JSON.parse(json);
+        for(key in obj){
+            const markup=
+            `<div> <span> ${key}:${obj[key]}</span>
+                </div>`;
+                document.getElementById('data').innerHTML+=markup;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form data</title>
+</head>
+<body>
+    <form >
+
+        <div>
+            <label for="fname">
+                Firstname
+            </label> <br>
+            <input type="text" name="fname" id="fname">
+        </div>
+
+        <div>
+            <label for="lname">
+                Lastname
+            </label> <br>
+            <input type="text" id="lname" name="lname">
+        </div>
+
+        <div>
+            <label for="age">
+                Your Age
+            </label> <br>
+            <input type="text" name="age" id="age">
+        </div>
+        <div>
+            <button type="submit" >Submit</button>
+        </div>
+    </form>
+    <script>
+      const form=  document.querySelector('form');
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            const fd=new FormData(form);
+            const obj= Object.fromEntries(fd)
+            console.log(obj);
+            // for(item of fd){
+            //     console.log(item);
+            // }
+            const json=JSON.stringify(obj);
+            console.log(json);
+
+            localStorage.setItem("form",json);
+            window.location.href="confirm.html";
+        })
+    </script>
+</body>
+</html>
