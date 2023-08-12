@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 section{
     position:relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100svh;
     padding: 100px;
     display: flex;
     justify-content: space-between;
@@ -99,5 +100,66 @@ header ul li a{
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
+    margin-top: 50px;
 
 }
+.content  .imgBox img{
+    max-width: 340px;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    display: flex;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
+}
+
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right  800px  );
+    transition: 0.5s;
+}
+

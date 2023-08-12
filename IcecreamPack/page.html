@@ -8,6 +8,9 @@
   </head>
   <body>
     <section>
+      <div class="circle">
+
+      </div>
       <header>
         <a href="#" class="logo"> <img src="logo.png" alt="" /></a>
         <ul>
@@ -33,9 +36,32 @@
           </p>
         </div>
         <div class="imgBox">
-            <img src="img1.png" alt="">
+            <img src="img1.png" class="starbucks" alt="">
         </div>
       </div>
+
+      <ul class="thumb">
+        <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeColor('#017143')" alt=""></li>
+        <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeColor('#eb7495')" alt=""></li>
+        <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeColor('#d752b1')" alt=""></li>
+      </ul>
+
+      <ul class="sci">
+        <li><a href="#"><img src="facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="instagram.png" alt=""></a></li>
+      </ul>
     </section>
+
+    <script type="text/javascript">
+      function imgSlider(img){
+        document.querySelector('.starbucks').src=img;
+
+      }
+      function changeColor(color) {
+        const circle=document.querySelector('.circle');
+        circle.style.background=color;
+      }
+    </script>
   </body>
 </html>
