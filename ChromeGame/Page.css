@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: "Arial";
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#charecter{
+    width: 20px;
+    height: 50px;
+    border-radius: 20px;
+    background: linear-gradient(45deg , yellow, lightgreen);
+    position: relative;
+    top: 150px;
+
+}
+.animate{
+    animation: jump 500ms  ;
+
+}
+
+#block{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg , rgb(27, 99, 176), rgb(38, 144, 232));
+    position: relative;
+    top: 130px;
+    left: 480px;
+    border-radius: 4px;
+    animation: block 1s infinite linear;
+}
+ @keyframes block {
+    0%{
+        left: 480px;
+    }
+    100%{
+        left: -40px;
+    }
+    
+ }
+
+ @keyframes jump {
+    0%{
+        top: 150px
+    }
+    30%{
+        top: 100px;
+    }
+    70%{
+        top: 100px;
+    }
+    100%{
+        top: 150px;
+    }
+     
+ }
