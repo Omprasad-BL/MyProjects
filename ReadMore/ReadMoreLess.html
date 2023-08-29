@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #more{
+            display: none;
+            transition: 0.5s;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 300px;
+            height: 600px;
+            padding: 5px;
+            background: rgb(20, 110, 48);
+            overflow: auto;
+            color: white;
+            border-radius: 5px;
+        }
+        button{
+            all: unset;
+            border: 1px solid black;
+            padding: 3px;
+            background-color: brown;  
+        }
+    </style>
+</head>
+<body>
+    
+    <p>
+        <img width="100%" src="https://goproton.co/wp-content/uploads/2022/08/dashbord.png" alt="">
+        Hello world Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia itaque iusto reiciendis suscipit neque necessitatibus distinctio explicabo maiores et cum illo sequi numquam, temporibus dolor eaque est quisquam optio inventore.
+    Mollitia vel magnam, error labore voluptatibus. Dolorem iste, exercitationem voluptate inventore illo necessitatibus dolores iusto, nulla amet, magni sunt officia. Quibusdam laborum dolorem provident.
+   <span id="dots">...</span> 
+  <span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam recusandae veritatis eos provident magni, fugit doloribus atque sequi enim consectetur officia inventore deleniti ratione quaerat architecto fuga dolorem! Eligendi, accusantium.
+  Natus nihil quisquam asperet libero fuga ipsum! Dolor obcaecati facere deserunt ipsam ratione facilis vero voluptas asperiores, cum blanditiis quia quibusdam. Nihil excepturi dolores error!</span>   
+ <button id="btn" onclick="change()">ReadMore</button>  </p>
+<script>
+    function change() {
+        var dots= document.getElementById("dots");
+        var more=document.getElementById("more");
+        var mybtn=document.getElementById("btn");
+        if (dots.style.display==="none") {
+            dots.style.display="inline"; // allowing dots
+            more.style.display="none" // hiding more content
+            mybtn.innerHTML="read more"; // changing text value
+        }
+        else{
+            dots.style.display="none";
+            more.style.display="inline"
+            mybtn.innerHTML="ReadLess";
+        }
+    }
+</script>
+</body>
+</html>
