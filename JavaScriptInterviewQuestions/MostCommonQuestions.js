@@ -69,3 +69,16 @@ function reverseString(str) {
   
 
   
+
+  // Question set 2
+
+  // How do you make an HTTP GET request using JavaScript?
+  var xhr = new XMLHttpRequest();
+xhr.open("GET", "url", true);
+xhr.onreadystatechange = function() {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    var responseData = JSON.parse(xhr.responseText);
+    // Process responseData
+  }
+};
+xhr.send();
